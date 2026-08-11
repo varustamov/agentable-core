@@ -23,7 +23,7 @@ agentable-mcp = "agentable.mcp_server:main"
 
 [project.urls]
 Homepage = "https://seo4agent.com"
-Repository = "https://github.com/agentable/agentable-core"
+Repository = "https://github.com/varustamov/agentable-core"
 
 [tool.hatch.build.targets.wheel]
 packages = ["agentable"]
