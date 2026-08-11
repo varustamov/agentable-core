@@ -59,7 +59,8 @@ async def list_tools() -> list[types.Tool]:
             description=(
                 "Audit a website for AI/agent readiness. Returns a readiness level (0-5), "
                 "score percentage, and individual check results. "
-                "Level 5 = Autonomous (fully agent-ready), Level 0 = Hostile."
+                "Level 5 = Autonomous (fully agent-ready), Level 0 = Hostile. "
+                "Free plan: 5 audits/day. Pro: unlimited."
             ),
             inputSchema={
                 "type": "object",
@@ -76,7 +77,7 @@ async def list_tools() -> list[types.Tool]:
             name="bulk_audit",
             description=(
                 "Audit multiple websites at once (up to 50). Returns a summary table "
-                "with level and score for each URL. Requires authentication."
+                "with level and score for each URL. Requires Pro subscription."
             ),
             inputSchema={
                 "type": "object",
@@ -84,7 +85,7 @@ async def list_tools() -> list[types.Tool]:
                     "urls": {
                         "type": "array",
                         "items": {"type": "string"},
-                        "description": "List of URLs to audit (max 50)",
+                        "description": "List of URLs to audit (max 50, Pro only)",
                         "maxItems": 50,
                     }
                 },
@@ -94,7 +95,8 @@ async def list_tools() -> list[types.Tool]:
         types.Tool(
             name="compare_urls",
             description=(
-                "Compare 2–4 websites side by side for agent readiness. "
+                "Compare websites side by side for agent readiness. "
+                "Free plan: up to 2 URLs. Pro plan: up to 8 URLs. "
                 "Returns scores and check results for each URL."
             ),
             inputSchema={
@@ -103,9 +105,9 @@ async def list_tools() -> list[types.Tool]:
                     "urls": {
                         "type": "array",
                         "items": {"type": "string"},
-                        "description": "2 to 4 URLs to compare",
+                        "description": "2–8 URLs to compare (2 for Free, up to 8 for Pro)",
                         "minItems": 2,
-                        "maxItems": 4,
+                        "maxItems": 8,
                     }
                 },
                 "required": ["urls"],

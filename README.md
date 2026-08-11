@@ -29,12 +29,12 @@ Get your token at [seo4agent.com](https://seo4agent.com) → Settings.
 
 ### Available MCP tools
 
-| Tool | Description |
-|------|-------------|
-| `audit_url` | Audit a single URL for agent readiness |
-| `bulk_audit` | Audit up to 50 URLs in parallel |
-| `compare_urls` | Compare 2–4 URLs side by side |
-| `get_leaderboard` | Public leaderboard of top agent-ready sites |
+| Tool | Description | Plan |
+|------|-------------|------|
+| `audit_url` | Audit a single URL for agent readiness | Free (5/day) · Pro (unlimited) |
+| `bulk_audit` | Audit up to 50 URLs in parallel | Pro only |
+| `compare_urls` | Compare URLs side by side (2 Free / up to 8 Pro) | Free + Pro |
+| `get_leaderboard` | Public leaderboard of top agent-ready sites | Free |
 
 ## Python SDK
 
