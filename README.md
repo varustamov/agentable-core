@@ -64,6 +64,26 @@ async def main():
 asyncio.run(main())
 ```
 
+## x402 — Pay per audit (no account required)
+
+The REST endpoint supports the [x402 payment protocol](https://x402.org) — pay **$0.10 USDC** per audit directly from any EVM wallet on Base, no account needed.
+
+```js
+import { wrapFetchWithPayment } from "@x402/fetch";
+import { CdpX402Client } from "@coinbase/cdp-sdk/x402";
+
+const client = new CdpX402Client();
+const fetchWithPayment = wrapFetchWithPayment(fetch, client);
+
+const res = await fetchWithPayment("https://seo4agent.com/audit/run", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ url: "https://example.com" }),
+});
+```
+
+See the [x402 buyer quickstart](https://docs.cdp.coinbase.com/x402/buyer/quickstart) for full setup.
+
 ## Environment variables
 
 | Variable | Default | Description |
