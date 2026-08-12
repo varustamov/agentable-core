@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1030"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="url(#bg)" rx="12"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#ffffff08" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="300" y1="0" x2="300" y2="280"/>
+    <line x1="600" y1="0" x2="600" y2="280"/>
+    <line x1="900" y1="0" x2="900" y2="280"/>
+  </g>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)" rx="0"/>
+
+  <!-- Logo area -->
+  <text x="64" y="108" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#7c3aed" letter-spacing="3" opacity="0.8">AGENT READINESS</text>
+  <text x="60" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" font-weight="700" fill="#ffffff" filter="url(#glow)">agentable</text>
+  <text x="60" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="#94a3b8">Python SDK &amp; MCP server for seo4agent.com</text>
+
+  <!-- Divider -->
+  <rect x="60" y="220" width="48" height="3" fill="url(#accent)" rx="2"/>
+
+  <!-- Tags -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13">
+    <rect x="60" y="236" width="90" height="26" rx="13" fill="#7c3aed22" stroke="#7c3aed55" stroke-width="1"/>
+    <text x="105" y="253" fill="#a78bfa" text-anchor="middle">MCP Server</text>
+
+    <rect x="162" y="236" width="80" height="26" rx="13" fill="#2563eb22" stroke="#2563eb55" stroke-width="1"/>
+    <text x="202" y="253" fill="#60a5fa" text-anchor="middle">Python SDK</text>
+
+    <rect x="254" y="236" width="60" height="26" rx="13" fill="#059669" fill-opacity="0.15" stroke="#05966955" stroke-width="1"/>
+    <text x="284" y="253" fill="#34d399" text-anchor="middle">x402</text>
+  </g>
+
+  <!-- Right side: level ladder -->
+  <g transform="translate(700, 40)">
+    <text x="0" y="20" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" fill="#64748b" letter-spacing="2">READINESS LEVELS</text>
+
+    <!-- L5 -->
+    <rect x="0" y="36" width="440" height="30" rx="6" fill="#7c3aed" fill-opacity="0.12" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="56" font-family="'SF Mono', monospace" font-size="12" fill="#a78bfa" font-weight="600">L5</text>
+    <text x="44" y="56" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">Subscribable — webhooks, event streams</text>
+
+    <!-- L4 -->
+    <rect x="0" y="72" width="440" height="30" rx="6" fill="#2563eb" fill-opacity="0.12" stroke="#2563eb" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="92" font-family="'SF Mono', monospace" font-size="12" fill="#60a5fa" font-weight="600">L4</text>
+    <text x="44" y="92" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">Payable — x402 protocol, USDC on Base</text>
+
+    <!-- L3 -->
+    <rect x="0" y="108" width="440" height="30" rx="6" fill="#0891b2" fill-opacity="0.12" stroke="#0891b2" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="128" font-family="'SF Mono', monospace" font-size="12" fill="#22d3ee" font-weight="600">L3</text>
+    <text x="44" y="128" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">API-ready — OpenAPI, MCP endpoint</text>
+
+    <!-- L2 -->
+    <rect x="0" y="144" width="440" height="30" rx="6" fill="#059669" fill-opacity="0.12" stroke="#059669" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="164" font-family="'SF Mono', monospace" font-size="12" fill="#34d399" font-weight="600">L2</text>
+    <text x="44" y="164" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">Structured — schema.org, JSON-LD</text>
+
+    <!-- L1 -->
+    <rect x="0" y="180" width="440" height="30" rx="6" fill="#d97706" fill-opacity="0.12" stroke="#d97706" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="200" font-family="'SF Mono', monospace" font-size="12" fill="#fbbf24" font-weight="600">L1</text>
+    <text x="44" y="200" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">Readable — llms.txt, sitemap.xml</text>
+
+    <!-- L0 -->
+    <rect x="0" y="216" width="440" height="30" rx="6" fill="#64748b" fill-opacity="0.12" stroke="#64748b" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="236" font-family="'SF Mono', monospace" font-size="12" fill="#94a3b8" font-weight="600">L0</text>
+    <text x="44" y="236" font-family="-apple-system, sans-serif" font-size="13" fill="#cbd5e1">Reachable — HTTPS, robots.txt</text>
+  </g>
+</svg>

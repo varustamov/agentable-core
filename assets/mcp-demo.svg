@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#0f1a2a"/>
+    </linearGradient>
+    <linearGradient id="acc2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="200" fill="url(#bg2)" rx="12"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#acc2)"/>
+
+  <!-- Terminal window chrome -->
+  <rect x="40" y="28" width="520" height="148" rx="8" fill="#1e1e2e" stroke="#ffffff10" stroke-width="1"/>
+  <rect x="40" y="28" width="520" height="32" rx="8" fill="#2a2a3e"/>
+  <rect x="40" y="52" width="520" height="8" fill="#2a2a3e"/>
+  <circle cx="64" cy="44" r="6" fill="#ff5f57"/>
+  <circle cx="84" cy="44" r="6" fill="#ffbd2e"/>
+  <circle cx="104" cy="44" r="6" fill="#28ca41"/>
+  <text x="280" y="48" font-family="'SF Mono', monospace" font-size="12" fill="#64748b" text-anchor="middle">terminal</text>
+
+  <text x="60" y="96" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#64748b">$</text>
+  <text x="74" y="96" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e2e8f0">pip install agentable-core</text>
+
+  <text x="60" y="122" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#34d399">✓</text>
+  <text x="80" y="122" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#64748b">Successfully installed agentable-core-0.1.3</text>
+
+  <text x="60" y="148" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#64748b">$</text>
+  <text x="74" y="148" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#e2e8f0">agentable-mcp</text>
+  <text x="60" y="168" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#a78bfa">→</text>
+  <text x="80" y="168" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#64748b">MCP server running, 4 tools available</text>
+
+  <!-- Arrow -->
+  <g transform="translate(590, 80)">
+    <line x1="0" y1="30" x2="40" y2="30" stroke="#7c3aed" stroke-width="2"/>
+    <polygon points="40,24 52,30 40,36" fill="#7c3aed"/>
+  </g>
+
+  <!-- MCP tools panel -->
+  <rect x="660" y="28" width="500" height="148" rx="8" fill="#1e1e2e" stroke="#7c3aed44" stroke-width="1"/>
+  <rect x="660" y="28" width="500" height="32" rx="8" fill="#2a1a3e"/>
+  <rect x="660" y="52" width="500" height="8" fill="#2a1a3e"/>
+  <text x="910" y="48" font-family="-apple-system, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" font-weight="600">MCP Tools</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13">
+    <text x="680" y="86" fill="#7c3aed">▸</text>
+    <text x="698" y="86" fill="#e2e8f0" font-family="'SF Mono', monospace">audit_url</text>
+    <text x="810" y="86" fill="#64748b">— audit any URL for agent readiness</text>
+
+    <text x="680" y="110" fill="#2563eb">▸</text>
+    <text x="698" y="110" fill="#e2e8f0" font-family="'SF Mono', monospace">bulk_audit</text>
+    <text x="810" y="110" fill="#64748b">— audit up to 50 URLs in parallel</text>
+
+    <text x="680" y="134" fill="#0891b2">▸</text>
+    <text x="698" y="134" fill="#e2e8f0" font-family="'SF Mono', monospace">compare_urls</text>
+    <text x="810" y="134" fill="#64748b">— side-by-side comparison</text>
+
+    <text x="680" y="158" fill="#059669">▸</text>
+    <text x="698" y="158" fill="#e2e8f0" font-family="'SF Mono', monospace">get_leaderboard</text>
+    <text x="810" y="158" fill="#64748b">— top agent-ready sites</text>
+  </g>
+</svg>

@@ -1,8 +1,12 @@
 # agentable-core
 
+<img src="assets/banner.svg" width="100%" alt="agentable — agent-readiness auditing"/>
+
 Python SDK and MCP server for [seo4agent.com](https://seo4agent.com) — agent-readiness auditing.
 
 ## Install
+
+<img src="assets/mcp-demo.svg" width="100%" alt="MCP server demo"/>
 
 ```bash
 pip install agentable-core
