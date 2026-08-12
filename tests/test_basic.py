@@ -1,17 +1,19 @@
 """Basic smoke tests for agentable-core."""
-from agentable import audit_url, AuditResult
+from agentable import AgentableClient
 
 
-def test_audit_result_fields():
-    result = AuditResult(url="https://example.com", level=2, score=8, max_score=24, checks=[])
-    assert result.url == "https://example.com"
-    assert result.level == 2
-    assert 0 <= result.score <= result.max_score
+def test_client_instantiates_without_token():
+    client = AgentableClient()
+    assert client.base_url == "https://seo4agent.com"
+    assert isinstance(client._headers, dict)
 
 
-def test_audit_url_returns_result():
-    result = audit_url("https://example.com")
-    assert isinstance(result, AuditResult)
-    assert result.url == "https://example.com"
-    assert result.level >= 0
-    assert result.score >= 0
+def test_client_instantiates_with_token():
+    client = AgentableClient(token="test-token-123")
+    assert "Authorization" in client._headers
+    assert client._headers["Authorization"] == "Bearer test-token-123"
+
+
+def test_client_base_url_strips_trailing_slash():
+    client = AgentableClient(base_url="https://example.com/")
+    assert client.base_url == "https://example.com"
