@@ -1,0 +1,35 @@
+{
+  "mcpServers": [
+    {
+      "name": "agentable-audit",
+      "description": "AI Agent Readiness Auditor — audit any URL for agent compatibility across L0-L5",
+      "url": "https://seo4agent.com/mcp",
+      "transport": "http",
+      "version": "1.0.0",
+      "tools": [
+        {
+          "name": "audit_url",
+          "description": "Audit a website URL for AI agent readiness. Returns L0-L5 level, score, and detailed check results.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "description": "The URL to audit" }
+            },
+            "required": ["url"]
+          }
+        },
+        {
+          "name": "get_badge",
+          "description": "Get an SVG badge showing the agent-readiness level for a domain.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "domain": { "type": "string", "description": "Domain name (e.g. example.com)" }
+            },
+            "required": ["domain"]
+          }
+        }
+      ]
+    }
+  ]
+}

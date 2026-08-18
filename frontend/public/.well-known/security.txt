@@ -1,0 +1,5 @@
+Contact: mailto:vladimir.arustamov1@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, ru
+Policy: https://seo4agent.com/security-policy
+Canonical: https://seo4agent.com/.well-known/security.txt

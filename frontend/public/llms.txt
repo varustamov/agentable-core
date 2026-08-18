@@ -1,0 +1,31 @@
+# Agentable?
+
+> AI Agent Readiness Auditor — audit any website for compatibility with AI agents across L0–L5 levels.
+
+Source: https://seo4agent.com
+
+## What is Agentable?
+
+Agentable audits websites across 24 checks organized into 6 levels of AI agent readiness:
+- L0 Hostile: basic reachability and blocking
+- L1 Readable: HTML structure, meta tags, SSR
+- L2 Discoverable: robots.txt, sitemap, llms.txt, OpenAPI, security.txt
+- L3 Interactive: agent card, JSON API, rate limits
+- L4 Integrated: MCP server, webhooks, auth, WebMCP, x402
+- L5 Autonomous: SSE streaming, subscription API, agent manifest
+
+## Features
+
+- [Audit](https://seo4agent.com/register) — free one-shot audit with L0-L5 scoring
+- [Compare](https://seo4agent.com/compare) — compare up to 4 sites side by side
+- [Badge](https://seo4agent.com/badge/yourdomain.com) — embeddable SVG badge for your README
+- [llms.txt Generator](https://seo4agent.com) — auto-generate llms.txt from your site content
+
+## API
+
+- Badge SVG: GET https://seo4agent.com/badge/{domain}
+- Generate llms.txt: POST https://seo4agent.com/generate/llms-txt {"url": "https://example.com"}
+- OpenAPI docs: https://seo4agent.com/docs
+
+---
+Built by [/function1](https://fnctn1.com)

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentable? — Is Your Site Visible to AI Agents?</title>
+    <meta name="description" content="Audit your website's readiness for AI agents. Get scored L0–L5 and actionable fixes." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seo4agent.com/" />
+    <meta property="og:title" content="Agentable? — Is Your Site Visible to AI Agents?" />
+    <meta property="og:description" content="Audit your website's readiness for AI agents. Get scored L0–L5 and actionable fixes." />
+    <meta property="og:image" content="https://seo4agent.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Agentable? — Is Your Site Visible to AI Agents?" />
+    <meta name="twitter:description" content="Audit your website's readiness for AI agents. Get scored L0–L5 and actionable fixes." />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Agentable?",
+      "url": "https://seo4agent.com",
+      "description": "AI Agent Readiness Auditor — audit any website for AI agent compatibility across L0-L5 levels.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Organization", "name": "/function1" }
+    }
+    </script>
+
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNVQ4SC24T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JNVQ4SC24T');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Static semantic content for AI agent crawlers and SSR detection -->
+    <header style="display:none" aria-hidden="true">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/leaderboard">Leaderboard</a>
+        <a href="/compare">Compare</a>
+        <a href="/bulk">Bulk Audit</a>
+      </nav>
+    </header>
+    <main style="display:none" aria-hidden="true">
+      <article>
+        <section>
+          <h1>Agentable? — AI Agent Readiness Auditor</h1>
+          <p>Audit your website's readiness for AI agents. Get scored L0–L5 across 24 checks covering discoverability, machine-readability, API access, authentication, and autonomous agent compatibility.</p>
+          <p>Agentable checks for: robots.txt, sitemap.xml, llms.txt, security.txt, OpenAPI spec, rate limit headers, agent card, JSON API, MCP server, webhooks, streaming, and more.</p>
+          <p>Enter any URL to get your free agent-readiness score. Level 5 means fully autonomous agent-compatible. Level 0 means blocked.</p>
+        </section>
+        <section>
+          <h2>Features</h2>
+          <p>Single audit, bulk audit up to 50 sites, competitor comparison, weekly monitoring with Telegram alerts, Fix Pack ZIP download, embeddable badge, public leaderboard, and MCP server integration.</p>
+        </section>
+      </article>
+    </main>
+    <footer style="display:none" aria-hidden="true">
+      <p>seo4agent.com — Built by /function1. Agent-readiness auditing for the agentic web.</p>
+    </footer>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-black text-brand-text font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-surface;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-muted;
+  }
+
+  ::selection {
+    @apply bg-brand-yellow/30 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-brand-surface/80 backdrop-blur-xl border border-brand-border;
+  }
+
+  .glow-border-yellow {
+    box-shadow: 0 0 0 1px rgba(240,195,60,0.4), 0 0 20px rgba(240,195,60,0.1);
+  }
+
+  .glow-border-purple {
+    box-shadow: 0 0 0 1px rgba(124,58,237,0.4), 0 0 20px rgba(124,58,237,0.1);
+  }
+
+  .level-badge {
+    @apply inline-flex items-center justify-center font-mono font-bold text-sm
+           rounded-full border-2 transition-all duration-300;
+  }
+
+  .check-row {
+    @apply flex items-start gap-3 py-3 px-4 rounded-xl border border-brand-border/50
+           bg-brand-surface-2/50 animate-slide-up;
+  }
+}
+
+/* Blob animation delay helpers */
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+.animation-delay-6000 { animation-delay: 6s; }
+
+/* Staggered children animation */
+.stagger-children > * {
+  opacity: 0;
+  animation: slideUp 0.4s ease forwards;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.10s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.20s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.30s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.35s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.40s; }

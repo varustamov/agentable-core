@@ -1,0 +1,20 @@
+{
+  "x402Version": 2,
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "maxAmountRequired": "100000",
+      "resource": "https://seo4agent.com/audit/run",
+      "description": "Agent-readiness audit — $0.10 USDC on Base",
+      "mimeType": "application/json",
+      "payTo": "0x2427CE4588EB9bBdd92f4c065899657060607fCB",
+      "maxTimeoutSeconds": 300,
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "extra": {
+        "name": "USDC",
+        "version": "2"
+      }
+    }
+  ]
+}
